@@ -1,0 +1,145 @@
+/* Reset styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #ff3366;
+}
+
+.option {
+  border: 1px solid #f4f4f4;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.badge {
+  background-color: #ff3366;
+  color: #fff;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.price small {
+  color: #888;
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+.customize {
+  display: none;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.row {
+  display: flex; /* Make columns align horizontally */
+  gap: 15px; /* Add space between columns */
+  margin: 15px; /* Add space around the row */
+}
+
+.popular-label {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ff3366; /* Pink background */
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 12px;
+  transform: rotate(0deg); /* Optional rotation for ribbon effect */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.option.expanded {
+  border-color: #f33;
+  padding-bottom: 20px;
+}
+
+.option.expanded .customize {
+  display: block;
+}
+
+.pricing-summary {
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: space-between; /* Space between Free Delivery and Total */
+  align-items: center; /* Align items vertically */
+  margin-top: 20px; /* Add some spacing above */
+  font-family: Arial, sans-serif; /* Ensure consistent font */
+}
+
+/* Free Delivery Text */
+.free-delivery {
+  font-size: 14px; /* Smaller font size */
+  color: #ff3366; /* Pink color */
+  font-weight: bold; /* Bold text */
+}
+
+/* Total Amount Section */
+.total-amount {
+  font-size: 14px; /* Match Free Delivery font size */
+  color: #000; /* Black color for Total label */
+  font-weight: normal; /* Normal weight for Total label */
+}
+
+/* Price Styling */
+.price {
+  font-size: 16px; /* Slightly larger for the price */
+  font-weight: bold; /* Emphasize the price */
+  color: #000; /* Black color for the price */
+}
+
+.add-to-cart {
+  width: 100%;
+  background-color: #ff3366;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-to-cart:hover {
+  background-color: #c00;
+}
